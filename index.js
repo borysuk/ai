@@ -334,3 +334,4 @@ app.listen(app.get('port'), function() {
 app.get('*', function(req, res){
   res.render('pages/error', createEJSTemplateDataDictionary(req, res));
 });
+var storage = multer.memoryStorage();
